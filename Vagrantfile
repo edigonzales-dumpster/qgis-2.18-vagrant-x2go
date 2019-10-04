@@ -26,12 +26,12 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
-  config.vm.network "forwarded_port", guest: 22, host: 2027, id: 'ssh'
+  config.vm.network "forwarded_port", guest: 22, host: 20211, id: 'ssh'
   
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
-  config.vm.network "private_network", ip: "192.168.50.7"
+  config.vm.network "private_network", ip: "192.168.50.11"
   
   # Create a editlic network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -85,7 +85,7 @@ Vagrant.configure("2") do |config|
     apt-get install -y ifupdown
     apt-get install -y fonts-liberation
     echo 'deb     https://qgis.org/debian-ltr xenial main' | tee /etc/apt/sources.list.d/qgis.list
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-key CAEB3DC3BDF7FB45
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
     apt-get update
     apt-get install -y qgis python-qgis
     apt-get install -y gdal-bin python-gdal
