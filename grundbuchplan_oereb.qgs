@@ -15,7 +15,9 @@
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_grenzpunkt20191004085330677" source="dbname='pub' host=geodb.rootso.org port=5432 user='bjsvwzie' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grenzpunkt&quot; (geometrie) sql=" name="ch.so.agi.grundbuchplan_sw.grenzpunkte">
-      <customproperties/>
+      <customproperties>
+        <property key="expandedLegendNodes" value="{90b077c5-30dc-40fe-ab64-368083df7a8f}"/>
+      </customproperties>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_geometrie20191004075307650" source="dbname='pub' host=geodb.rootso.org port=5432 user='bjsvwzie' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck&quot; (geometrie) sql=" name="ch.so.agi.grundbuchplan_sw.liegenschaften">
       <customproperties>
@@ -30,10 +32,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2620033.59544017631560564</xmin>
-      <ymin>1237240.79443392134271562</ymin>
-      <xmax>2620317.15051087830215693</xmax>
-      <ymax>1237499.81132045737467706</ymax>
+      <xmin>2600463.42897286731749773</xmin>
+      <ymin>1215421.94863932323642075</ymin>
+      <xmax>2600540.58457966987043619</xmax>
+      <ymax>1215492.42738267011009157</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -4234,7 +4236,7 @@ def my_form_open(dialog, layer, feature):
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleLine" locked="0">
+            <layer pass="2" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -4253,7 +4255,7 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
-            <layer pass="0" class="SimpleLine" locked="0">
+            <layer pass="2" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -4272,7 +4274,7 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
-            <layer pass="0" class="SimpleLine" locked="0">
+            <layer pass="2" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -4291,7 +4293,7 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
-            <layer pass="0" class="SimpleLine" locked="0">
+            <layer pass="2" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -4310,7 +4312,7 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="4">
-            <layer pass="0" class="SimpleLine" locked="0">
+            <layer pass="2" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
